@@ -1,0 +1,3 @@
+language = Objective-C
+
+headers = ObjcAbsClass.h ObjcClass.h
