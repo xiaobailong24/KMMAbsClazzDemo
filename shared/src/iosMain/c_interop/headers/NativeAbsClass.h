@@ -1,6 +1,3 @@
 #import <Foundation/Foundation.h>
-
-@interface ObjcAbsClass : NSObject
-
-
+@interface NativeAbsClass : NSObject
 @end

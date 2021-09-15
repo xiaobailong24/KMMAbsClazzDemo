@@ -1,7 +1,8 @@
 package com.kmm.abs.clazz.jvm.library
 
-abstract class JavaAbsClass
+abstract class JvmAbsClass
+class JvmSubClass: JvmAbsClass()
 
-class JavaClass {
-    var absList: List<JavaAbsClass> = listOf()
+class JvmClass {
+    var absList: List<JvmAbsClass> = listOf()
 }

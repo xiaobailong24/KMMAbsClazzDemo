@@ -1,7 +1,18 @@
 package com.kmm.abs.clazz.demo
 
-expect abstract class CommonAbsClass
+expect object PlatformUtil {
+    fun isJvm(): Boolean
+    fun isNative(): Boolean
+}
 
-expect class CommonClass
+expect abstract class CommonAbsJvmClass
+expect class CommonSubJvmClass() : CommonAbsJvmClass
 
-expect var CommonClass.abstractList: List<CommonAbsClass>
+expect class CommonAbsNativeClass()
+
+expect class CommonClass()
+
+expect var CommonClass.abstractJvmList: List<CommonAbsJvmClass>
+
+
+expect var CommonClass.abstractNativeList: List<CommonAbsNativeClass>
